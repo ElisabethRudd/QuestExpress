@@ -1,12 +1,12 @@
 body {
-  background-color: whitesmoke;
+  background-color: black;
   color: #c70039;
   text-align: center;
 }
 
 /*Title and navbar section*/
 .nav {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   display: flex;
   position: fixed;
@@ -15,11 +15,13 @@ body {
   justify-content: space-between;
   top: 0;
   height: 10%;
+  border-bottom: 3px solid darkgray;
+  z-index: 2;
 }
 .nav a {
-  color: white;
+  color: lightgray;
   text-decoration: underline;
-  font-family: Helvetica;
+  font-family: "Open Sans";
   font-size: 2rem;
   margin-right: 3%;
   margin-left: 2%;
@@ -44,10 +46,18 @@ body {
 /*About section*/
 .about {
   background-image: url("https://wallpaperaccess.com/full/350107.jpg");
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+  );
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   width: 100%;
-  height: 90%;
+  height: 110%;
   display: flex;
-  margin-top: 10%;
+  margin-top: 5.2%;
   flex-direction: column;
   align-content: center;
   justify-content: center;
@@ -90,17 +100,18 @@ body {
   flex-wrap: wrap;
   width: 100%;
   height: 150%;
-  background-color: lightgray;
+
   margin-top: 6%;
   justify-content: space-around;
   align-content: top;
 }
 .single-img {
-  margin: 5%;
-  width: 300px;
-  height: 200px;
+  margin: 1%;
+  width: 40%;
+  height: 20%;
   display: flex;
   flex-direction: row;
+  border: 1px solid red;
 }
 .single-img img {
   width: 100%;
@@ -119,8 +130,52 @@ body {
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  flex-wrap: wrap;
   width: 100%;
-  height: 80%;
-  background-color: lightgray;
-  margin-top: 6%;
+  height: 150%;
+  /*background: lightgray;*/
+  background-image: url("https://wallpaperaccess.com/full/882.jpg");
+  margin-top: 0%;
+}
+.team-title {
+  font-family: "Pirata One";
+  color: lightgray;
+  width: 100%;
+  font-size: 2rem;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+.team-member {
+  width: 30%;
+  height: 42%;
+  margin-right: 2%;
+  margin-top: 4%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.team-member img {
+  /*width: 400px;
+  height: 300px;*/
+  width: 90%;
+  height: 55%;
+  margin-left: 5%;
+}
+.team-member h2 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Pirata One";
+}
+.team-member h3 {
+  color: white;
+  font-family: "Open Sans";
+  margin-top: 1%;
 }
