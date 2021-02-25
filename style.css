@@ -1,16 +1,126 @@
 body {
-  background-color: #f8f2de;
+  background-color: whitesmoke;
   color: #c70039;
-}
-h1 {
   text-align: center;
-  margin-top: 3%;
-  margin-bottom: 2%;
-  font-size: 5rem;
-  font-family: "Pirata One";
 }
+
+/*Title and navbar section*/
+.nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  height: 10%;
+}
+.nav a {
+  color: white;
+  text-decoration: underline;
+  font-family: Helvetica;
+  font-size: 2rem;
+  margin-right: 3%;
+  margin-left: 2%;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  margin-right: 4%;
+}
+
+.title {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Pirata One";
+  height: 100%;
+  margin-left: 1%;
+  color: #b50000;
+}
+/*About section*/
 .about {
   background-image: url("https://wallpaperaccess.com/full/350107.jpg");
   width: 100%;
+  height: 90%;
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.about-des {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(6, 8, 7, 0.7);
+  width: 100%;
+  height: 30%;
+}
+.des-words {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 50%;
+}
+.about h2 {
+  text-align: center;
+  font-family: "Pirata One";
+  font-size: 4rem;
+  color: white;
+}
+
+.about h3 {
+  text-align: center;
+  font-family: "Pirata One";
+  font-size: 3rem;
+  color: white;
+}
+/*Product Section*/
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 150%;
+  background-color: lightgray;
+  margin-top: 6%;
+  justify-content: space-around;
+  align-content: top;
+}
+.single-img {
+  margin: 5%;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+}
+.single-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1%;
+}
+.single-img h3 {
+  margin-left: 4%;
+  font-family: "Pirata One";
+  font-size: 2rem;
+  color: black;
+}
+/*Team Section*/
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
   height: 80%;
+  background-color: lightgray;
+  margin-top: 6%;
 }
