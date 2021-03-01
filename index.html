@@ -18,7 +18,10 @@
     <div class="header">
       <div class="nav">
         <div class="title"><h1>Quest Express</h1></div>
-        <div class="links"><a>Products</a> <a>about</a> <a>news</a></div>
+        <div class="links">
+          <a href="#products">Products</a> <a href="#team">about</a>
+          <a href="#signup-section">news</a>
+        </div>
       </div>
     </div>
 
@@ -31,55 +34,57 @@
     </div>
 
     <!--Product Section-->
-    <div class="products">
+
+    <div class="products" id="products">
+      <!--Swords-->
       <div class="single-img">
-        <img
-          src="https://www.collectorsweekly.com/uploads/2013/04/DragonClose.jpg"
-        />
+        <div class="swords">
+          <div class="product-des"><h3>Swords</h3></div>
+        </div>
       </div>
-      <!--<h3>Swords</h3>-->
+      <!--Shields-->
+      <div class="single-img">
+        <div class="shields">
+          <div class="product-des"><h3>Shields</h3></div>
+        </div>
+      </div>
+      <!--Potions-->
+      <div class="single-img">
+        <div class="potions">
+          <div class="product-des"><h3>Potions</h3></div>
+        </div>
+      </div>
+      <!--Bows-->
 
       <div class="single-img">
-        <img
-          src="https://ansionnachfionn.files.wordpress.com/2019/01/A-Medieval-Viking-shield-wall-army-warriors.jpg"
-        />
-        <!--<h3>Shields</h3>-->
+        <div class="bows">
+          <div class="product-des"><h3>Bows</h3></div>
+        </div>
       </div>
+
+      <!--Magic Items-->
       <div class="single-img">
-        <img
-          src="https://static2.srcdn.com/wordpress/wp-content/uploads/2019/12/Harry-Potter-potions-header.jpg?q=50&fit=crop&w=960&h=500"
-        />
-        <!--<h3>Potions</h3>-->
+        <div class="magic-items">
+          <div class="product-des"><h3>Magic Items</h3></div>
+        </div>
       </div>
+      <!--Apparel-->
       <div class="single-img">
-        <img
-          src="https://cdn.zmescience.com/wp-content/uploads/2020/05/istock-174973323-741x387-1.jpg"
-        />
-        <!--<h3>Bows</h3>-->
+        <div class="apparel">
+          <div class="product-des"><h3>Apparel</h3></div>
+        </div>
       </div>
+      <!--Axes-->
       <div class="single-img">
-        <img
-          src="https://www.corporatecomplianceinsights.com/wp-content/uploads/2019/01/crystal-ball.jpg"
-        />
-        <!--<h3>Magic Items</h3>-->
-      </div>
-      <div class="single-img">
-        <img
-          src="https://st2.depositphotos.com/3881799/7976/i/600/depositphotos_79769202-stock-photo-mysterious-woman-in-red-cloak.jpg"
-        />
-        <!--<h3>Apparel</h3>-->
-      </div>
-      <div class="single-img">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0750/4973/products/s-l1600_1_2048x2048.jpg?v=1607955604"
-        />
-        <!--<h3>Axes</h3>-->
+        <div class="axes">
+          <div class="product-des"><h3>Axes</h3></div>
+        </div>
       </div>
     </div>
 
     <!--Team section-->
     <div class="team-title"><h2>Our Team</h2></div>
-    <div class="team">
+    <div class="team" id="team">
       <div class="team-member">
         <img
           src="https://cdn.mos.cms.futurecdn.net/xUcDT9U4ZZaF4thFn8KnQb.jpg"
@@ -111,6 +116,19 @@
     </div>
 
     <!--Signup section-->
-    <div class="signup"></div>
+    <div class="signup" id="signup-section">
+      <div class="signup-form">
+        <h3>Sign up for updates on new products, restocks and more</h3>
+        <form>
+          <input
+            type="email"
+            placeholder="WorfTheDwarf@gmail.com"
+            name="signup"
+            id="signup"
+          /><br />
+          <input type="submit" value="submit" id="submit" />
+        </form>
+      </div>
+    </div>
   </body>
 </html>
